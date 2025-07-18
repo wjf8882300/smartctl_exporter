@@ -205,3 +205,6 @@ smartmontools also has a [wiki page for NVMe](https://www.smartmontools.org/wiki
 
 ## How do I report upstream to smartmontools?
 Check their FAQ: [How to create a bug report](https://www.smartmontools.org/wiki/FAQ#Howtocreateabugreport).
+
+
+## Solve nvme errors
