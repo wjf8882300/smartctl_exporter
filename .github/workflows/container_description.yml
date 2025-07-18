@@ -27,6 +27,14 @@ jobs:
           username: ${{ secrets.DOCKER_HUB_USERNAME }}
           password: ${{ secrets.DOCKER_HUB_PASSWORD }}
 
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.21'
+
+      - name: Build smartctl_exporter binary
+        run: make build
+
       - name: Build and push
         uses: docker/build-push-action@v5
         with:
