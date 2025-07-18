@@ -13,7 +13,7 @@
 
 # Needs to be defined before including Makefile.common to auto-generate targets
 DOCKER_ARCHS ?= amd64
-DOCKER_REPO  ?= prometheuscommunity
+DOCKER_REPO  ?= wjf8882300
 
 include Makefile.common
 
