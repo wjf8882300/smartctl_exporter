@@ -176,7 +176,7 @@ func jsonIsOk(logger *slog.Logger, json gjson.Result) bool {
 		for _, message := range messages.Array() {
 			if message.Get("severity").String() == "error" {
 				logger.Error(message.Get("string").String())
-				return false
+				// return false
 			}
 		}
 	}
